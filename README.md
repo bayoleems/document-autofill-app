@@ -19,7 +19,6 @@ This project is designed to streamline the process of generating forms from DOCX
 - Python 3.x
 - `python-docx` library for DOCX file manipulation
 - `Flask` for the web interface
-- `threading` for scheduling
 
 ### Installation
 
