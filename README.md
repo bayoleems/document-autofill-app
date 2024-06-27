@@ -25,7 +25,7 @@ This project is designed to streamline the process of generating forms from DOCX
 1. Clone the repository:
     ```sh
     git clone https://github.com/bayoleems/document-autofill-app.git
-    cd autofill-doc-app
+    cd document-autofill-app
     ```
 
 2. Install the required dependencies:
