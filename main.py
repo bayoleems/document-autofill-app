@@ -12,7 +12,7 @@ import time
 def download_and_redirect(file_path):
     time.sleep(1)
     os.remove(file_path)
-    os.remove(fr"./uploads/{file_path.split('filled_')[1]}")
+    os.remove(fr"uploads/{file_path.split('filled_')[1]}")
     return "Follow me all social media platforms: @bayoleems"
 
 def extract_words(text):
@@ -114,7 +114,12 @@ def process():
         return redirect(url_for('index'))
 
     if file:
-        dir = r'./uploads'
+        dir = 'uploads'
+
+        # Check if the path exists
+        if not os.path.exists(dir):
+            # If the path does not exist, create it
+            os.makedirs(dir)
 
         # Save the file to the upload directory
         filename = os.path.join(dir, file.filename)
